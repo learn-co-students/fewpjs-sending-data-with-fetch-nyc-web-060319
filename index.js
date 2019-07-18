@@ -20,12 +20,12 @@ function submitData(name, email) {
             return response.json();
         })
         .then(function(object) {
-            document.body.innerHTML = document.body.innerHTML + object.id.toString()
+            document.body.innerHTML += object.id.toString()
             return object.id
         })
         .catch(function(message) {
             message = "Unauthorized Access"
-            document.body.innerHTML = document.body.innerHTML + message
+            document.body.innerHTML += message
         })
 }
 
